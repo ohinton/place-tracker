@@ -10,9 +10,6 @@ var copenhagen = new Destination("Little Mermaid statue", "Fall", "Visit Viking 
 var warsaw = new Destination("Old Town", "Fall", "Bring home a bottle of Polish vodka!");
 
 
-
-
-
 $(document).ready(function() {
   event.preventDefault();
 
@@ -20,26 +17,32 @@ $(document).ready(function() {
     $(".landmarks").text(london.landmarks);
     $(".timeofYear").text(london.timeofYear);
     $(".proTip").text(london.proTip);
-  //
-  // $(".berlin").last().click(function(event) {
-  //   $(".landmarks").text(berlin.landmarks);
-  //   $(".timeofYear").text(berlin.timeofYear);
-  //   $(".proTip").text(berlin.proTip);
-  //
-  // $(".copenhagen").last().click(function(event) {
-  //   $(".landmarks").text(copenhagen.landmarks);
-  //   $(".timeofYear").text(copenhagen.timeofYear);
-  //   $(".proTip").text(copenhagen.proTip);
-  //
-  // $(".warsaw").last().click(function(event) {
-  //   $(".landmarks").text(warsaw.landmarks);
-  //   $(".timeofYear").text(warsaw.timeofYear);
-  //   $(".proTip").text(warsaw.proTip);
+
+    $("#show-locations").show();
+
+  $(".berlin").last().click(function(event) {
+    $(".landmarks").text(berlin.landmarks);
+    $(".timeofYear").text(berlin.timeofYear);
+    $(".proTip").text(berlin.proTip);
+
+    $("#show-locations").show();
+
+  $(".copenhagen").last().click(function(event) {
+    $(".landmarks").text(copenhagen.landmarks);
+    $(".timeofYear").text(copenhagen.timeofYear);
+    $(".proTip").text(copenhagen.proTip);
+
+    $("#show-locations").show();
+
+  $(".warsaw").last().click(function(event) {
+    $(".landmarks").text(warsaw.landmarks);
+    $(".timeofYear").text(warsaw.timeofYear);
+    $(".proTip").text(warsaw.proTip);
 
     $("#show-locations").show();
 
   });
 });
-// });
-// });
-// });
+});
+});
+});
